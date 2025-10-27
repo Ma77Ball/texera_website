@@ -1,0 +1,27 @@
+# Hugo build artifacts
+/public/
+/resources/
+/hugo_cache/
+/hugo_cache_modules/
+.hugo_build.lock
+
+# Hugo modules
+/_vendor/
+/themes/  # only ignore if you're using Docsy as a Hugo module, not cloned
+
+# Backup files
+*.bak
+
+# OS & editor junk
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*.swo
+
+# IDE / editor configs
+.vscode/
+.idea/
+
+# Node (optional, future-proof)
+node_modules/

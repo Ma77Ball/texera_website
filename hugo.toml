@@ -1,0 +1,27 @@
+baseURL = 'http://texera.apache.org/'
+languageCode = 'en-us'
+title = ''
+[module]
+  [[module.imports]]
+    path = "github.com/google/docsy"
+
+  [[module.imports]]
+    path = "github.com/google/docsy/dependencies"
+
+[languages.en]
+languageName = "English"
+contentDir = "content/en"
+[languages.en.params]
+title = "Goldydocs"
+description = "The operating system for the cloud"
+time_format_default = "2006-01-02"
+time_format_blog = "January 2, 2006"
+
+[languages.es]
+languageName = "Español"
+contentDir = "content/es"
+[languages.es.params]
+title = "Goldydocs"
+description = "El sistema operativo para la nube"
+time_format_default = "02-01-2006"
+time_format_blog = "2 de enero de 2006"
