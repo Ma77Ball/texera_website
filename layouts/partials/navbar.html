@@ -8,11 +8,17 @@
             {{- if $cover }} td-navbar-cover {{- end }}" data-bs-theme="dark">
     <div class="container-fluid flex-column flex-md-row">
         <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
+            {{- /**/ -}}
             <span class="navbar-brand__logo navbar-logo">
-                <img src="{{"images/texera_logo.png" | relURL }}" alt="{{ .Site.Title }}" width="40" height="40"
-                    class="brand-logo">
+              {{ with resources.Get "icons/logo.png" }}
+                <img src="{{ .RelPermalink }}" alt="{{ $.Site.Title }}" height="40" class="brand-logo">
+              {{ end }}
             </span>
-            <span class="navbar-brand__name">{{ .Site.Title }}</span>
+            {{- /**/ -}}
+            <span class="navbar-brand__name">
+      {{- .Site.Title -}}
+    </span>
+            {{- /**/ -}}
         </a>
         <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
             <ul class="navbar-nav">
@@ -28,11 +34,14 @@
                     {{ $href = .URL | relLangURL -}}
                     {{ end -}}
                     {{ $isExternal := ne $baseURL.Host (urls.Parse .URL).Host -}}
-                    <a {{/**/ -}} class="nav-link {{- if $active }} active {{- end }}" {{/**/ -}} href="{{ $href }}" {{-
-                        if $isExternal }} target="_blank" rel="noopener" {{- end -}}>
-                        {{- .Pre -}}
-                        <span>{{ .Name }}</span>
-                        {{- .Post -}}
+                    <a {{/**/ -}}
+                    class="nav-link {{- if $active }} active {{- end }}" {{/**/ -}}
+                    href="{{ $href }}"
+                    {{- if $isExternal }} target="_blank" rel="noopener" {{- end -}}
+                    >
+                    {{- .Pre -}}
+                    <span>{{ .Name }}</span>
+                    {{- .Post -}}
                     </a>
                 </li>
                 {{ end -}}

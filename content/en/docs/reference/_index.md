@@ -1,12 +1,62 @@
 ---
 title: Reference
-description: Low level reference docs for your project.
+description: In-depth technical and configuration references for Texera’s components and environment.
 weight: 9
 ---
 
 {{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
+This section contains detailed, low-level reference materials for Texera’s configuration, components, and internal modules.
 {{% /pageinfo %}}
 
-If your project has an API, configuration, or other reference - anything that users need to look up that’s at an even lower level than a single task - put (or link to it) here. You can serve and link to generated reference docs created using Doxygen,
-Javadoc, or other doc generation tools by putting them in your `static/` directory. Find out more in [Adding static content](https://docsy.dev/docs/adding-content/content/#adding-static-content). For OpenAPI reference, Docsy also provides a [Swagger UI layout and shortcode](https://www.docsy.dev/docs/adding-content/shortcodes/#swaggerui) that renders [Swagger UI](https://swagger.io/tools/swagger-ui/) using any OpenAPI YAML or JSON file as source.
+The **Reference** section provides look-up documentation for developers and maintainers who need specific, technical information about Texera’s internals or environment.  
+Unlike the [Concepts](/docs/concepts/) section, which explains *how Texera works*, this section focuses on *how Texera is configured, built, and extended*.
+
+---
+
+### What you’ll find here
+
+This section includes reference information for:
+
+- **Configuration and Environment Setup:** Detailed parameters and environment variables used for development, deployment, and testing.
+- **Project Structure:** Explanation of major code directories, module dependencies, and naming conventions.
+- **Execution Engine Details:** Low-level reference for engine modules, operators’ lifecycle, and workflow translation.
+- **Operator Framework:** Technical notes on operator registration, metadata, and extension mechanisms.
+- **Frontend Components:** Descriptions of UI module structure, Angular components, and visualization hooks.
+- **Persistence and Storage:** Information about Texera’s internal storage models, catalog, and workflow metadata.
+
+---
+
+### When to use this section
+
+Use this section when you need:
+
+- To understand or modify Texera’s **internal modules or configuration files**.
+- To **debug, extend, or refactor** parts of the codebase.
+- To **deploy Texera** in a local, testing, or production environment and need to adjust settings or dependencies.
+
+---
+
+### How to maintain this section
+
+Reference pages are often technical and version-specific. Keep them up to date by:
+
+- Linking or embedding **auto-generated documentation** from code comments (e.g., Javadoc for backend modules or TypeDoc for frontend).
+- Including **manual reference pages** for configuration files, startup scripts, and architecture diagrams.
+- Updating this section whenever internal modules or configuration formats change.
+
+---
+
+### Suggested subpages
+
+| File | Purpose |
+|------|----------|
+| `reference/configuration.md` | Environment variables, ports, and server settings. |
+| `reference/project-structure.md` | Directory overview and build system explanation. |
+| `reference/engine.md` | Detailed explanation of execution engine internals. |
+| `reference/operators.md` | Operator registration and lifecycle details. |
+| `reference/frontend.md` | Frontend architecture and components. |
+| `reference/storage.md` | Persistence layer, catalog, and metadata handling. |
+
+---
+
+This section is meant to be a **developer’s technical handbook** for Texera’s internal systems — a precise reference for anyone maintaining, extending, or deploying the platform.

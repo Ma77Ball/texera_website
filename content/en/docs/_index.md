@@ -1,28 +1,35 @@
 ---
-title: Documentation
-linkTitle: Docs
-menu: {main: {weight: 20}}
+title: Texera Documentation
 ---
 
 {{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
+Welcome to the **Texera Documentation Portal** — your guide to understanding, deploying, and contributing to the Texera platform.
 {{% /pageinfo %}}
 
-This section is where the user documentation for your project lives - all the
-information your users need to understand and successfully use your project.
+Texera is an open-source data analytics and workflow management system that enables visual programming, data processing, and machine learning with a powerful and intuitive interface.  
+This section contains all the information you need to **install**, **configure**, and **use Texera effectively**.
 
-For large documentation sets we recommend adding content under the headings in
-this section, though if some or all of them don’t apply to your project feel
-free to remove them or add your own. You can see an example of a smaller Docsy
-documentation site in the [Docsy User Guide](https://docsy.dev/docs/), which
-lives in the [Docsy theme
-repo](https://github.com/google/docsy/tree/master/userguide) if you'd like to
-copy its docs section.
+## Getting Started
 
-Other content such as marketing material, case studies, and community updates
-should live in the [About](/about/) and [Community](/community/) pages.
+If you're new to Texera, start with the **[Quick Start Guide](/docs/get-started/)** to set up your environment and create your first workflow.
 
-Find out how to use the Docsy theme in the [Docsy User
-Guide](https://docsy.dev/docs/). You can learn more about how to organize your
-documentation (and how we organized this site) in [Organizing Your
-Content](https://docsy.dev/docs/best-practices/organizing-content/).
+## User Guides
+
+Learn how to:
+- Build and run workflows in the Texera UI
+- Manage datasets and operators
+- Integrate machine learning or custom Python operators
+- Collaborate and share workflows across teams
+
+Visit the **[User Guides section](/docs/user-guide/)** for detailed tutorials and examples.
+
+## Developer Resources
+
+For developers, Texera provides a modular architecture with clear APIs for extending operators, UI components, and backend services.  
+Explore the **[Developer Documentation](/docs/developer-guide/)** for instructions on setting up the development environment, coding standards, and contributing to the project.
+
+## Additional Information
+
+Community discussions, announcements, and research papers related to Texera can be found in the **[Community](/community/)** and **[About](/about/)** pages.
+
+You can learn more about the project and its open-source contributions on the [Texera GitHub repository](https://github.com/Texera/texera).

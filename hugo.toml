@@ -2,7 +2,6 @@ baseURL = "https://example.docsy.dev/"
 title = "Texera"
 
 # Language settings
-contentDir = "content/en"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 # Useful when translating.
@@ -55,16 +54,33 @@ anchor = "smart"
 [languages.en]
 languageName = "English"
 title = "Texera"
+contentDir = "content/en"
+weight = 1
 [languages.en.params]
+title = "Texera"
 description = "Apache Texera: interactive, scalable dataflow analytics"
+[languages.en.menu]
+[[languages.en.menu.main]]
+name = "Docs"
+url  = "/docs/"
+weight = 10
 
 [languages.es]
 languageName = "Español"
 title = "Texera"
+contentDir = "content/es"
+weight = 2
 [languages.es.params]
+title = "Texera"
 description = "Apache Texera: flujos de datos interactivos y escalables"
 time_format_default = "02-01-2006"
 time_format_blog = "2 de enero de 2006"
+# Optional: ES menus so the top navbar is populated
+[languages.es.menu]
+[[languages.es.menu.main]]
+name = "Documentación"
+url  = "/es/docs/"
+weight = 10
 
 [markup]
 [markup.goldmark]
@@ -134,12 +150,12 @@ enable = false
 # End user relevant links (left side footer & community page)
 [[params.links.user]]
 name = "User mailing list"
-url = "https://lists.apache.org/list.html?user@texera.apache.org"
+url = "https://incubator.apache.org/projects/texera.html"
 icon = "fa fa-envelope"
 desc = "Discussion and help from fellow users"
 [[params.links.user]]
 name = "Announcements"
-url = "https://lists.apache.org/list.html?announce@apache.org"
+url = "https://incubator.apache.org/projects/texera.html"
 icon = "fa fa-bullhorn"
 desc = "ASF-wide release and news announcements"
 [[params.links.user]]
@@ -160,7 +176,7 @@ url = "https://lists.apache.org/list.html?dev@texera.apache.org"
 icon = "fa fa-envelope"
 desc = "Development discussions"
 [[params.links.developer]]
-name = "JIRA / Issues"
+name = "Issues"
 url = "https://github.com/apache/texera/issues"
 icon = "fa fa-tasks"
 desc = "Report bugs and track features"

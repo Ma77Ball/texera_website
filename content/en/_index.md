@@ -16,32 +16,28 @@ Learn More <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 {{< /blocks/cover >}}
 
 {{% blocks/section color="primary" type="row" %}}
-
-
-{{% blocks/feature icon="fa-lightbulb" title="Interactive Dataflow Design" %}}
-Build and run workflows through a drag-and-drop interface. Texera supports data preprocessing, analytics, and visualization all in one place.
+{{% blocks/feature icon="fa-users" title="Collaborative Data Science" %}}
+Work together in real time from any browser. Share data and workflows, edit simultaneously, and track every change with built-in version control.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-github" title="Open Source and Community Driven" url="https://github.com/apache/texera" %}}
-We follow an open contribution model on **GitHub** using [Pull Requests](https://github.com/apache/texera/pulls).  
-New contributors and collaborators are always welcome!
+{{% blocks/feature icon="fa-diagram-project" title="Graphical Workflow Interface" %}}
+Build workflows visually with drag-and-drop tools. See live status updates and interact with executions as they run.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-chart-line" title="Scalable Execution Engine" %}}
-Powered by a distributed dataflow backend, Texera efficiently scales from interactive data exploration to large-scale batch analytics.
+{{% blocks/feature icon="fa-robot" title="Expandable AI/ML Access" %}}
+Use AI and ML operators with the integrated editor. Supports Python, R, and Java/Scala for flexible development.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-lightbulb" title="Interactive Dataflow Design" %}}
-Build and run workflows through a drag-and-drop interface. Texera supports data preprocessing, analytics, and visualization all in one place.
+{{% blocks/feature icon="fa-database" title="Unified Data Access" %}}
+Connect to databases, cloud storage, and APIs. Combine different data sources easily in one streamlined workflow.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-github" title="Open Source and Community Driven" url="https://github.com/apache/texera" %}}
-We follow an open contribution model on **GitHub** using [Pull Requests](https://github.com/apache/texera/pulls).  
-New contributors and collaborators are always welcome!
+{{% blocks/feature icon="fa-chart-pie" title="Interactive Visualization" %}}
+Watch results appear as you work. Monitor performance, explore outputs, and share interactive charts instantly.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-chart-line" title="Scalable Execution Engine" %}}
-Powered by a distributed dataflow backend, Texera efficiently scales from interactive data exploration to large-scale batch analytics.
+{{% blocks/feature icon="fa-plug" title="Integration & Extensibility" %}}
+Extend Texera with custom plugins or connect to various tools. Designed to grow with your data ecosystem.
 {{% /blocks/feature %}}
 
 {{% /blocks/section %}}
