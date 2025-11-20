@@ -18,21 +18,31 @@ jobs:
         with:
           fetch-depth: 0
 
+      # Install Node.js (needed for PostCSS)
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'      # or 20 / 18; just match your local
+
+      # Install PostCSS CLI + plugins
+      - name: Install PostCSS dependencies
+        run: |
+          npm install --no-fund --no-audit --save-dev postcss postcss-cli autoprefixer
+
       - name: Install Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.152.2'
+          hugo-version: '0.152.2'   # or whatever you’re using locally
           extended: true
 
       - name: Build Hugo site
         run: |
-          # adjust if your config needs it
           hugo --minify -d public
 
+      # Deploy static files to publish branch
       - name: Deploy to publish branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: publish
-          # optional: keep-history: true
